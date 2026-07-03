@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 
@@ -14,25 +15,16 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+  const darkMode = mounted && resolvedTheme === "dark";
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const shouldUseDark = storedTheme ? storedTheme === "dark" : prefersDark;
-
-    document.documentElement.classList.toggle("dark", shouldUseDark);
-    const frame = requestAnimationFrame(() => setDarkMode(shouldUseDark));
-
-    return () => cancelAnimationFrame(frame);
+    setMounted(true);
   }, []);
 
   function toggleTheme() {
-    const nextTheme = !darkMode;
-
-    setDarkMode(nextTheme);
-    document.documentElement.classList.toggle("dark", nextTheme);
-    localStorage.setItem("theme", nextTheme ? "dark" : "light");
+    setTheme(darkMode ? "light" : "dark");
   }
 
   return (
@@ -58,14 +50,14 @@ export default function Navbar() {
           <Link
             aria-label="Github"
             className="grid h-9 w-9 place-items-center rounded-xl bg-blue-50 text-slate-800 transition hover:-translate-y-0.5 hover:text-blue-500 dark:bg-slate-800 dark:text-slate-100"
-            href="https://github.com/"
+            href="https://github.com/IlhamMaulanaAkbar/"
           >
             <GithubIcon height={18} width={18} />
           </Link>
           <Link
             aria-label="LinkedIn"
             className="grid h-9 w-9 place-items-center rounded-xl bg-blue-50 text-slate-800 transition hover:-translate-y-0.5 hover:text-blue-500 dark:bg-slate-800 dark:text-slate-100"
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/ilhammaulanaakbar/"
           >
             <LinkedinIcon height={17} width={17} />
           </Link>

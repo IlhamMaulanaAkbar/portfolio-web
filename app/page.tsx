@@ -26,91 +26,86 @@ type TechIcon = ComponentType<SVGProps<SVGSVGElement>>;
 
 function HtmlIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <path d="M3 2h18l-1.6 18L12 22l-7.4-2L3 2Z" fill="#E34F26" />
-      <path d="M12 4v15.9l5.9-1.6L19.2 4H12Z" fill="#EF652A" />
-      <path d="M7.2 8.7h4.8v2.2H9.6l.2 2.1H12v2.2H7.7L7.2 8.7Z" fill="#EBEBEB" />
-      <path d="M12 8.7h4.8l-.2 2.2H12V8.7Zm0 4.3h2.3l-.2 2.5-2.1.6v2.3l4.1-1.1.6-6.4H12V13Z" fill="#FFFFFF" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M4 3h16l-1.5 16L12 21l-6.5-2L4 3Z" />
+      <path d="M8.5 8.5h7l-.3 3H9l.2 2.5 2.8.8 2.8-.8.2-1.5" />
     </svg>
   );
 }
 
 function CssIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <path d="M3 2h18l-1.6 18L12 22l-7.4-2L3 2Z" fill="#1572B6" />
-      <path d="M12 4v15.9l5.9-1.6L19.2 4H12Z" fill="#33A9DC" />
-      <path d="M7.2 8.7h4.8v2.2H9.6l.1 1.2H12v2.2H7.8L7.2 8.7Z" fill="#EBEBEB" />
-      <path d="M12 8.7h4.7l-.2 2.2H12V8.7Zm0 3.4h4.3l-.5 5.2-3.8 1.1v-2.3l1.9-.5.1-1.3H12v-2.2Z" fill="#FFFFFF" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M4 3h16l-1.5 16L12 21l-6.5-2L4 3Z" />
+      <path d="M15.5 8.5H8l.3 3h6.9l-.5 4-2.7.8-2.7-.8-.2-1.5" />
     </svg>
   );
 }
 
 function JavaScriptIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <rect fill="#F7DF1E" height="20" rx="3" width="20" x="2" y="2" />
-      <path d="M8.8 17.2c.4.7.9 1.2 1.8 1.2.8 0 1.3-.4 1.3-1.8V9.3h2.3v7.4c0 2.3-1.3 3.7-3.5 3.7-1.9 0-3-1-3.6-2.3l1.7-.9Zm6.4-.2c.6.9 1.4 1.4 2.4 1.4.8 0 1.3-.3 1.3-.9 0-.7-.5-.9-1.5-1.3l-.6-.3c-1.6-.7-2.6-1.5-2.6-3.3 0-1.7 1.3-3 3.3-3 1.4 0 2.5.5 3.2 1.8l-1.7 1.1c-.4-.7-.8-1-1.5-1s-1.1.4-1.1.9c0 .7.4.9 1.4 1.3l.6.3c1.9.8 2.9 1.6 2.9 3.4 0 1.9-1.5 3-3.6 3-2 0-3.3-1-4-2.2l1.5-1.2Z" fill="#111827" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="3" />
+      <path d="M8 17c.3.6.9 1 1.7 1 1 0 1.3-.5 1.3-1.5V10" />
+      <path d="M14 10v5c0 1 .5 2 2 2s2-.8 2-2" />
     </svg>
   );
 }
 
 function PhpIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <ellipse cx="12" cy="12" fill="#777BB4" rx="10" ry="5.6" />
-      <text fill="#FFFFFF" fontFamily="Arial, sans-serif" fontSize="6.2" fontWeight="700" x="5" y="14.1">
-        PHP
-      </text>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <ellipse cx="12" cy="12" rx="10" ry="5.5" />
+      <path d="M7 10h2.5a1.5 1.5 0 0 1 0 3H7v-3Zm0 3v2" />
+      <path d="M13 10h2.5a1.5 1.5 0 0 1 0 3H13v2" />
     </svg>
   );
 }
 
 function LaravelIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" {...props}>
-      <path d="M4 6.3 8.4 4l4.4 2.3v5L8.4 14 4 11.3v-5Z" stroke="#FF2D20" strokeLinejoin="round" strokeWidth="1.8" />
-      <path d="m12.8 6.3 3.2-1.7 4 2.2v5l-4 2.3-3.2-1.8" stroke="#FF2D20" strokeLinejoin="round" strokeWidth="1.8" />
-      <path d="M8.4 14v4.2l4.4 2.3 4-2.2v-4.2" stroke="#FF2D20" strokeLinejoin="round" strokeWidth="1.8" />
-      <path d="M8.4 4v10m8.4.1V4.6" stroke="#FF2D20" strokeLinecap="round" strokeWidth="1.8" />
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M4 6.3 8.4 4l4.4 2.3v5L8.4 14 4 11.3v-5Z" />
+      <path d="m12.8 6.3 3.2-1.7 4 2.2v5l-4 2.3-3.2-1.8" />
+      <path d="M8.4 14v4.2l4.4 2.3 4-2.2v-4.2" />
+      <path d="M8.4 4v10m8.4.1V4.6" />
     </svg>
   );
 }
 
 function TailwindIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <path d="M12 6.2c-2.6 0-4.2 1.3-5 3.8 1-.8 2-.9 3.1-.3.6.4 1.1 1 1.7 1.4 1 .8 2.2 1.2 3.7 1.2 2.6 0 4.2-1.3 5-3.8-1 .8-2 .9-3.1.3-.6-.4-1.1-1-1.7-1.4-1-.8-2.2-1.2-3.7-1.2Zm-5 5.5c-2.6 0-4.2 1.3-5 3.8 1-.8 2-.9 3.1-.3.6.4 1.1 1 1.7 1.4 1 .8 2.2 1.2 3.7 1.2 2.6 0 4.2-1.3 5-3.8-1 .8-2 .9-3.1.3-.6-.4-1.1-1-1.7-1.4-1-.8-2.2-1.2-3.7-1.2Z" fill="#06B6D4" />
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M12 6.2c-2.6 0-4.2 1.3-5 3.8 1-.8 2-.9 3.1-.3.6.4 1.1 1 1.7 1.4 1 .8 2.2 1.2 3.7 1.2 2.6 0 4.2-1.3 5-3.8-1 .8-2 .9-3.1.3-.6-.4-1.1-1-1.7-1.4-1-.8-2.2-1.2-3.7-1.2Zm-5 5.5c-2.6 0-4.2 1.3-5 3.8 1-.8 2-.9 3.1-.3.6.4 1.1 1 1.7 1.4 1 .8 2.2 1.2 3.7 1.2 2.6 0 4.2-1.3 5-3.8-1 .8-2 .9-3.1.3-.6-.4-1.1-1-1.7-1.4-1-.8-2.2-1.2-3.7-1.2Z" />
     </svg>
   );
 }
 
 function BootstrapIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <rect fill="#7952B3" height="18" rx="4" width="20" x="2" y="3" />
-      <path d="M8.2 6.7h4.7c2.4 0 3.7 1 3.7 2.7 0 1.2-.7 2-1.8 2.3 1.4.3 2.2 1.2 2.2 2.7 0 1.9-1.5 3-4 3H8.2V6.7Zm2.2 4.4h2.1c1.2 0 1.8-.4 1.8-1.3s-.6-1.3-1.8-1.3h-2.1v2.6Zm0 4.5h2.4c1.2 0 1.9-.5 1.9-1.4 0-1-.7-1.5-2-1.5h-2.3v2.9Z" fill="#FFFFFF" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="4" />
+      <path d="M8 7h4.5a2 2 0 0 1 0 4H8V7Zm0 4h5a2 2 0 0 1 0 4H8v-4Z" />
     </svg>
   );
 }
 
 function VsCodeIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <path d="m17.7 3.2-8.3 7.9-4.1-3.2-2 1.5 4.3 4.1-4.3 4.1 2 1.5 4.1-3.2 8.3 7.9 3.3-1.4V4.6l-3.3-1.4Z" fill="#007ACC" />
-      <path d="M17.8 8.2v7.6l-5.1-3.8 5.1-3.8Z" fill="#FFFFFF" opacity=".35" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="m17.5 3.5-8 7.5-4-3-2 1.5 4 4-4 4 2 1.5 4-3 8 7.5 3-1.5V5l-3-1.5Z" />
+      <path d="M17.5 8v8" />
     </svg>
   );
 }
 
 function FigmaIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" {...props}>
-      <circle cx="9" cy="5" fill="#F24E1E" r="3" />
-      <circle cx="15" cy="5" fill="#FF7262" r="3" />
-      <circle cx="9" cy="12" fill="#A259FF" r="3" />
-      <circle cx="15" cy="12" fill="#1ABCFE" r="3" />
-      <circle cx="9" cy="19" fill="#0ACF83" r="3" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M9 2h6a3 3 0 0 1 0 6H9a3 3 0 0 1 0-6Z" />
+      <path d="M6 11a3 3 0 0 1 3-3h3v6H9a3 3 0 0 1-3-3Z" />
+      <path d="M12 14h3a3 3 0 0 1 0 6h-3v-6Z" />
+      <circle cx="9" cy="20" r="3" />
     </svg>
   );
 }

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     "Project collection by Ilham Maulana Akbar, including web applications and training management systems.",
 };
 
+const sortedProjects = [...projects].sort(
+  (a, b) => Number(b.year) - Number(a.year),
+);
+
 export default function ProjectsPage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-14">
@@ -24,7 +28,7 @@ export default function ProjectsPage() {
         </div>
 
         <div className="mt-8 grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+          {sortedProjects.map((project, index) => (
             <article
               className="group flex h-full overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-500 hover:shadow-md active:border-blue-500 dark:border-slate-800 dark:bg-black"
               key={project.slug}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "lucide-react";
+import { GithubIcon } from "@/components/BrandIcons";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import ProjectGallery from "@/components/ProjectGallery";
@@ -76,9 +77,12 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
 
           <Link
             className="mt-8 inline-flex items-center gap-2 border-b-2 border-slate-700 pb-2 font-bold text-slate-700 dark:border-slate-100 dark:text-slate-100"
-            href={project.image}
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View Project
+            <GithubIcon width={18} height={18} />
+            View on GitHub
             <ArrowUpRightIcon size={18} />
           </Link>
         </div>
