@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">BPPMT Banjarmasin public services screenshot placeholder</title>
+  <desc id="description">A polished placeholder that can be replaced with the second final website screenshot.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0fdfa"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#background)"/>
+  <rect x="80" y="64" width="1440" height="872" rx="34" fill="#ffffff"/>
+  <rect x="80" y="64" width="1440" height="86" rx="34" fill="#0f172a"/>
+  <circle cx="128" cy="107" r="10" fill="#fb7185"/>
+  <circle cx="162" cy="107" r="10" fill="#fbbf24"/>
+  <circle cx="196" cy="107" r="10" fill="#34d399"/>
+  <rect x="248" y="88" width="1060" height="38" rx="19" fill="#1e293b"/>
+  <text x="778" y="114" fill="#94a3b8" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">transmigrasi.go.id/bppmtbanjarmasin/layanan</text>
+  <rect x="128" y="190" width="250" height="688" rx="24" fill="#0f172a"/>
+  <circle cx="188" cy="246" r="25" fill="#3b82f6"/>
+  <text x="228" y="242" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">BPPMT</text>
+  <text x="228" y="264" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Banjarmasin</text>
+  <g font-family="Arial, sans-serif" font-size="16">
+    <rect x="154" y="310" width="198" height="48" rx="12" fill="#2563eb"/>
+    <text x="180" y="341" fill="#ffffff">Layanan Publik</text>
+    <text x="180" y="407" fill="#cbd5e1">Informasi Publik</text>
+    <text x="180" y="469" fill="#cbd5e1">Fasilitas</text>
+    <text x="180" y="531" fill="#cbd5e1">Pengaduan</text>
+    <text x="180" y="593" fill="#cbd5e1">Inovasi</text>
+    <text x="180" y="655" fill="#cbd5e1">Dokumen</text>
+    <text x="180" y="717" fill="#cbd5e1">Kontak</text>
+  </g>
+  <text x="430" y="238" fill="#64748b" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">PUBLIC INFORMATION</text>
+  <text x="430" y="286" fill="#0f172a" font-family="Arial, sans-serif" font-size="38" font-weight="700">Layanan &amp; Informasi Publik</text>
+  <text x="430" y="324" fill="#64748b" font-family="Arial, sans-serif" font-size="17">Akses cepat ke layanan, dokumen, fasilitas, dan kanal pengaduan.</text>
+  <g>
+    <rect x="430" y="376" width="322" height="196" rx="22" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="782" y="376" width="322" height="196" rx="22" fill="#f0fdfa" stroke="#99f6e4" stroke-width="2"/>
+    <rect x="1134" y="376" width="322" height="196" rx="22" fill="#fffbeb" stroke="#fde68a" stroke-width="2"/>
+    <circle cx="482" cy="430" r="26" fill="#2563eb"/>
+    <circle cx="834" cy="430" r="26" fill="#0f766e"/>
+    <circle cx="1186" cy="430" r="26" fill="#d97706"/>
+    <text x="470" y="492" fill="#0f172a" font-family="Arial, sans-serif" font-size="21" font-weight="700">Dokumen Publik</text>
+    <text x="822" y="492" fill="#0f172a" font-family="Arial, sans-serif" font-size="21" font-weight="700">Fasilitas</text>
+    <text x="1174" y="492" fill="#0f172a" font-family="Arial, sans-serif" font-size="21" font-weight="700">Pengaduan</text>
+    <rect x="470" y="522" width="206" height="13" rx="6" fill="#bfdbfe"/>
+    <rect x="822" y="522" width="206" height="13" rx="6" fill="#99f6e4"/>
+    <rect x="1174" y="522" width="206" height="13" rx="6" fill="#fde68a"/>
+  </g>
+  <rect x="430" y="616" width="1026" height="200" rx="22" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="474" y="668" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="700">Informasi Wajib Berkala</text>
+  <g fill="#cbd5e1">
+    <rect x="474" y="702" width="890" height="14" rx="7"/>
+    <rect x="474" y="738" width="760" height="14" rx="7"/>
+    <rect x="474" y="774" width="820" height="14" rx="7"/>
+  </g>
+  <rect x="693" y="860" width="500" height="28" rx="14" fill="#e2e8f0"/>
+  <text x="943" y="880" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">SCREENSHOT PLACEHOLDER 02</text>
+</svg>

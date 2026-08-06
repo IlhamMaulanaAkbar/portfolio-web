@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon, Globe2Icon } from "lucide-react";
 import { GithubIcon } from "@/components/BrandIcons";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
@@ -43,6 +43,16 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
     notFound();
   }
 
+  const aboutParagraphs = project.about ?? [
+    project.description,
+    "The platform was designed to simplify the management of training activities, participant registration, alumni data, and mentoring processes through an integrated and well-documented digital system.",
+  ];
+  const technologyDetails = project.technologyDetails ?? [
+    "Backend: PHP (Laravel)",
+    "Frontend: HTML, CSS, JavaScript",
+    "Database: MySQL",
+  ];
+
   return (
     <main className="mx-auto max-w-6xl px-6 py-16">
       <section className="grid items-center gap-14 md:grid-cols-[1fr_1.05fr]">
@@ -75,16 +85,35 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
             </div>
           </div>
 
-          <Link
-            className="mt-8 inline-flex items-center gap-2 border-b-2 border-slate-700 pb-2 font-bold text-slate-700 dark:border-slate-100 dark:text-slate-100"
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GithubIcon width={18} height={18} />
-            View on GitHub
-            <ArrowUpRightIcon size={18} />
-          </Link>
+          {project.liveWebsite || project.github ? (
+            <div className="mt-8 flex flex-wrap items-center gap-6">
+              {project.liveWebsite ? (
+                <Link
+                  className="inline-flex items-center gap-2 border-b-2 border-slate-700 pb-2 font-bold text-slate-700 transition hover:border-blue-500 hover:text-blue-500 dark:border-slate-100 dark:text-slate-100"
+                  href={project.liveWebsite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Globe2Icon size={18} />
+                  Visit Live Website
+                  <ArrowUpRightIcon size={18} />
+                </Link>
+              ) : null}
+
+              {project.github ? (
+                <Link
+                  className="inline-flex items-center gap-2 border-b-2 border-slate-700 pb-2 font-bold text-slate-700 transition hover:border-blue-500 hover:text-blue-500 dark:border-slate-100 dark:text-slate-100"
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubIcon width={18} height={18} />
+                  View on GitHub
+                  <ArrowUpRightIcon size={18} />
+                </Link>
+              ) : null}
+            </div>
+          ) : null}
         </div>
 
         <ProjectPreviewImage alt={project.title} src={project.image} />
@@ -97,14 +126,14 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
 
         <div className="mt-7 max-w-5xl text-base font-normal leading-8 text-slate-700 dark:text-slate-300">
           <h3 className="font-bold">
-            {project.title} — {project.detailTitle.replace(/\s?\(.+\)/, "")}
+            {project.aboutTitle ??
+              `${project.title} — ${project.detailTitle.replace(/\s?\(.+\)/, "")}`}
           </h3>
-          <p className="mt-5 text-justify">{project.description}</p>
-          <p className="mt-5 text-justify">
-            The platform was designed to simplify the management of training
-            activities, participant registration, alumni data, and mentoring
-            processes through an integrated and well-documented digital system.
-          </p>
+          {aboutParagraphs.map((paragraph) => (
+            <p className="mt-5 text-justify" key={paragraph}>
+              {paragraph}
+            </p>
+          ))}
 
           <h3 className="mt-5 font-bold">Key Features</h3>
           <ul className="mt-2 list-disc space-y-2 pl-7">
@@ -115,9 +144,9 @@ export default async function ProjectDetail({ params }: ProjectPageProps) {
 
           <h3 className="mt-5 font-bold">Technologies Used</h3>
           <ul className="mt-2 list-disc space-y-2 pl-7">
-            <li>Backend: PHP (Laravel)</li>
-            <li>Frontend: HTML, CSS, JavaScript</li>
-            <li>Database: MySQL</li>
+            {technologyDetails.map((technology) => (
+              <li key={technology}>{technology}</li>
+            ))}
           </ul>
 
           <h3 className="mt-5 font-bold">My Role</h3>

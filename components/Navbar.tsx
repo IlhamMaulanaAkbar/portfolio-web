@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 
 const navLinks = [
@@ -13,15 +13,17 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const subscribeToHydration = () => () => undefined;
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    subscribeToHydration,
+    () => true,
+    () => false,
+  );
   const { resolvedTheme, setTheme } = useTheme();
   const darkMode = mounted && resolvedTheme === "dark";
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   function toggleTheme() {
     setTheme(darkMode ? "light" : "dark");

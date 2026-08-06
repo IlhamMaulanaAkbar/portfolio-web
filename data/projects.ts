@@ -9,13 +9,23 @@ export type Project = {
   thumbnail: string;
   image: string;
   gallery: string[];
-  github: string;
+  github?: string;
+  liveWebsite?: string;
   description: string;
+  aboutTitle?: string;
+  about?: string[];
   technologies: string[];
+  technologyDetails?: string[];
   features: string[];
   role: string[];
   impact: string[];
 };
+
+const bppmtBanjarmasinGallery = [
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-1.svg",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-2.svg",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-3.svg",
+];
 
 const sidakGallery = [
   "/projects/sidak/sidak.png",
@@ -29,10 +39,6 @@ const eLatmasGallery = [
   "/projects/e-latmas/pembelajaran.png",
 ];
 
-const sidakMonitoringGallery = [
-  "/projects/sidak-monitoring/dashboard.png",
-];
-
 const inventoryGallery = [
   "/projects/inventory/dashboard.png",
   "/projects/inventory/kelola-akun.png",
@@ -40,6 +46,74 @@ const inventoryGallery = [
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "bppmt-banjarmasin",
+    title: "BPPMT Banjarmasin Official Website",
+    detailTitle: "BPPMT Banjarmasin Official Website",
+    category: "Web Development / WordPress Development",
+    date: "2026",
+    client: "BPPMT Banjarmasin",
+    year: "2026",
+    thumbnail: bppmtBanjarmasinGallery[0],
+    image: bppmtBanjarmasinGallery[0],
+    gallery: bppmtBanjarmasinGallery,
+    liveWebsite: "https://www.transmigrasi.go.id/bppmtbanjarmasin/",
+    description:
+      "A WordPress-based official website developed for BPPMT Banjarmasin as a replacement for its previous Canva Site. The project focused on creating a more professional, responsive, structured, and easily manageable platform for publishing institutional information, public services, programs, news, and documentation.",
+    aboutTitle:
+      "BPPMT Banjarmasin Official Website — WordPress Website Development and Migration",
+    about: [
+      "This project involved redesigning and migrating the official BPPMT Banjarmasin website from Canva Site to WordPress. The previous platform had limitations in content management, navigation, scalability, and website organization. The new website was developed to provide a more professional digital presence and make institutional information easier for the public to access.",
+      "The website presents organizational profiles, training and community empowerment programs, public information, public services, facilities, complaint services, innovations, announcements, ministry news, and publication galleries in a structured and accessible format. WordPress was selected to allow administrators to update content more efficiently without modifying the website source code directly.",
+    ],
+    technologies: [
+      "WordPress",
+      "Responsive Web Design",
+      "Content Management System",
+      "Website Migration",
+    ],
+    technologyDetails: [
+      "CMS: WordPress",
+      "Development: WordPress Theme and Page Customization",
+      "Design: Responsive Web Design",
+      "Content Management: WordPress CMS",
+      "Migration: Canva Site to WordPress",
+      "Deployment: Official Ministry of Transmigration domain",
+    ],
+    features: [
+      "Responsive landing page for desktop, tablet, and mobile devices",
+      "Structured navigation for institutional information and public services",
+      "Organizational profile and leadership information",
+      "Training and transmigration community empowerment program pages",
+      "Public information and document publication sections",
+      "Public service, facility, complaint, and innovation information",
+      "News, announcements, and publication gallery management",
+      "WordPress-based content management for easier administrative updates",
+      "Direct access to important public information and transmigration registration",
+      "Improved content organization compared to the previous Canva Site",
+    ],
+    role: [
+      "Analyzed the structure and limitations of the previous Canva Site",
+      "Designed the information architecture and navigation structure",
+      "Developed and customized the website using WordPress",
+      "Migrated institutional content from the previous website",
+      "Created responsive layouts for desktop, tablet, and mobile devices",
+      "Organized pages for profiles, programs, publications, services, facilities, complaints, and innovations",
+      "Configured news, announcements, documents, and gallery content",
+      "Improved content readability, accessibility, and visual consistency",
+      "Tested navigation, links, responsive layouts, and content presentation",
+      "Deployed the completed website to the official Ministry of Transmigration domain",
+    ],
+    impact: [
+      "Replaced the limited Canva Site with a scalable WordPress platform",
+      "Made institutional content easier for administrators to update",
+      "Improved access to public information and services",
+      "Provided clearer and more organized website navigation",
+      "Improved the institution’s professional digital presence",
+      "Enabled structured publication of news, documents, programs, and announcements",
+      "Created a responsive experience across different screen sizes",
+    ],
+  },
   {
     slug: "inventory",
     title: "INVENTORY APP",

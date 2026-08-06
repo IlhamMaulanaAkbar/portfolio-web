@@ -43,21 +43,6 @@ const organizationEntries = [
   },
 ];
 
-const workExperienceEntries = [
-  {
-    company: "BPPMDDTT Banjarmasin",
-    role: "Web Developer",
-    period: "2025",
-    type: "Internship",
-    bullets: [
-      "Developed a web-based training management and post-training mentoring system using PHP Laravel and MySQL.",
-      "Designed and implemented training registration, participant management, alumni data, and mentoring features.",
-      "Managed and validated more than 400 alumni records to support better documentation and reporting.",
-      "Collaborated with the institution to align the system with operational workflows and data management needs.",
-    ],
-  },
-];
-
 const educationHighlights = [
   "Active in student organizations at study program and faculty level.",
   "Completed Student Management Skills Training at Pre-Basic and Basic Level.",
