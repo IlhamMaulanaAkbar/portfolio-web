@@ -36,7 +36,7 @@ const contactCards = [
     icon: MessageCircleIcon,
     label: "WhatsApp",
     value: "Chat via WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/+6289691340612",
     description: "Quick questions and fast replies",
     color: "green",
   },
@@ -267,33 +267,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Available for */}
-      <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 dark:border-slate-800 dark:bg-black">
-        <h2 className="text-xl font-bold text-slate-950 dark:text-white">
-          I&apos;m Available For
-        </h2>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2">
-          {[
-            "Full Stack Web Development",
-            "Laravel & PHP Backend",
-            "REST API Design & Integration",
-            "Database Design & Management",
-            "Frontend UI with Tailwind / Bootstrap",
-            "Freelance & Contract Projects",
-          ].map((item) => (
-            <div
-              key={item}
-              className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300"
-            >
-              <CheckCircle2Icon
-                size={16}
-                className="shrink-0 text-blue-500"
-              />
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
     </main>
   );
 }

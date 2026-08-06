@@ -5,7 +5,7 @@ import { MapPinIcon } from "lucide-react";
 export const metadata: Metadata = {
   title: "About - Ilham Maulana Akbar",
   description:
-    "About Ilham Maulana Akbar, including organizational experience and education background.",
+    "About Ilham Maulana Akbar, a Full Stack Web Developer focused on Laravel and WordPress.",
 };
 
 const organizationEntries = [
@@ -106,7 +106,7 @@ export default function AboutPage() {
                 Ilham Maulana Akbar
               </h1>
               <p className="mt-2 text-sm font-semibold text-blue-500">
-                Web Developer
+                Full Stack Web Developer
               </p>
               <div className="mt-3 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
                 <MapPinIcon size={16} />
@@ -116,11 +116,12 @@ export default function AboutPage() {
 
             <div>
               <p className="text-base leading-8 text-slate-700 dark:text-slate-300">
-                I am a web developer with experience in web-based application
-                development, database management, and information technology
-                solutions that support more effective and integrated workflows.
-                I am used to working with a structured approach, adapting to new
-                technologies, and collaborating in software development teams.
+                I am a Full Stack Web Developer focused on Laravel and WordPress,
+                with experience in web application development, database
+                management, and digital solutions that support effective,
+                integrated workflows. I work with a structured approach, adapt
+                to new technologies, and collaborate effectively in software
+                development teams.
               </p>
             </div>
           </div>

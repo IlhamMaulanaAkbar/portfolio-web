@@ -50,7 +50,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link
-            aria-label="Github"
+            aria-label="GitHub"
             className="grid h-9 w-9 place-items-center rounded-xl bg-blue-50 text-slate-800 transition hover:-translate-y-0.5 hover:text-blue-500 dark:bg-slate-800 dark:text-slate-100"
             href="https://github.com/IlhamMaulanaAkbar/"
           >

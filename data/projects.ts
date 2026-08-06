@@ -22,9 +22,10 @@ export type Project = {
 };
 
 const bppmtBanjarmasinGallery = [
-  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-1.svg",
-  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-2.svg",
-  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-3.svg",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-1.png",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-2.png",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-3.png",
+  "/projects/bppmt-banjarmasin/bppmt-banjarmasin-4.png",
 ];
 
 const sidakGallery = [
@@ -50,7 +51,7 @@ export const projects: Project[] = [
     slug: "bppmt-banjarmasin",
     title: "BPPMT Banjarmasin Official Website",
     detailTitle: "BPPMT Banjarmasin Official Website",
-    category: "Web Development / WordPress Development",
+    category: "Web WordPress Development",
     date: "2026",
     client: "BPPMT Banjarmasin",
     year: "2026",

@@ -5,7 +5,6 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
-  { label: "Resume", href: "/resume.pdf" },
 ];
 
 const socialLinks = [
@@ -61,7 +60,7 @@ export default function Footer() {
         <div>
           <h4 className="mb-5 text-xl font-semibold text-slate-950 dark:text-white">
             Get In Touch
-          </h4>  
+          </h4>
           <div className="grid gap-4 text-base text-slate-600 dark:text-slate-300">
             {contactLinks.map((link) => (
               <Link className="transition hover:text-blue-500" href={link.href} key={link.label}>
