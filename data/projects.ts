@@ -205,7 +205,7 @@ export const projects: Project[] = [
     thumbnail: eLatmasGallery[0],
     image: eLatmasGallery[0],
     gallery: eLatmasGallery,
-    github: "https://github.com/IlhamMaulanaAkbar",
+    liveWebsite: "https://elatmas-balaibanjarmasin.web.id/",
     description:
       "E-LATMAS is a web-based training management and post-training mentoring system developed for BPPMDDTT Banjarmasin.",
     technologies: ["Laravel", "PHP", "MySQL", "JavaScript"],
